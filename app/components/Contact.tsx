@@ -22,7 +22,7 @@ export default function Contact() {
           href="mailto:contact@example.com"
           className="group relative inline-flex items-center gap-4 text-2xl md:text-4xl text-gray-300 font-heading tracking-widest hover:text-white transition-colors duration-300"
         >
-          LET'S TALK 
+          LET&apos;S TALK 
           <span className="w-12 h-12 rounded-full bg-accent text-white flex items-center justify-center group-hover:scale-110 group-hover:translate-x-2 transition-transform duration-300">
             <ArrowRight />
           </span>

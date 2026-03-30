@@ -19,7 +19,7 @@ export default function About() {
             I specialize in building robust frontend solutions that deliver seamless user experiences. With a strong foundation in <span className="text-white">React.js</span> and <span className="text-white">Next.js</span>, I translate complex requirements into clean, scalable code.
           </p>
           <p>
-            Whether it's creating pixel-perfect UIs from initial designs or optimizing web performance, I am constantly exploring modern standards to deliver impactful digital products that users genuinely love to use.
+            Whether it&apos;s creating pixel-perfect UIs from initial designs or optimizing web performance, I am constantly exploring modern standards to deliver impactful digital products that users genuinely love to use.
           </p>
         </div>
       </motion.div>

@@ -27,7 +27,7 @@ export default function Hero() {
             className="mt-8 max-w-2xl"
           >
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              Hi! I'm <span className="text-white font-semibold">Kunal Gawande</span>. A passionate Frontend Developer with 2+ years of experience specializing in React.js and Next.js. I focus on building scalable, responsive, and user-friendly web applications, blending clean code with modern UI/UX practices to deliver impactful digital solutions.
+              Hi! I&apos;m <span className="text-white font-semibold">Kunal Gawande</span>. A passionate Frontend Developer with 2+ years of experience specializing in React.js and Next.js. I focus on building scalable, responsive, and user-friendly web applications, blending clean code with modern UI/UX practices to deliver impactful digital solutions.
             </p>
 
             <button className="mt-10 px-8 py-4 bg-accent text-white font-bold tracking-wider hover:bg-accent-hover transition-colors duration-300 transform hover:-translate-y-1 block">
