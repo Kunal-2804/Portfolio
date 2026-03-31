@@ -19,10 +19,10 @@ export default function Projects() {
   return (
     <section className="py-32 px-6 lg:px-24 max-w-7xl mx-auto">
        <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
-        transition={{ duration: 0.8 }}
+        initial={{ opacity: 0.2 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ margin: "-30% 0px -30% 0px" }}
+        transition={{ duration: 0.5 }}
       >
         <h2 className="font-heading text-4xl md:text-6xl text-white mb-16">
           SELECTED <span className="text-accent">PROJECTS</span>

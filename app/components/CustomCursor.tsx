@@ -8,8 +8,10 @@ export default function CustomCursor() {
   const [hidden, setHidden] = useState(false);
   const [clicked, setClicked] = useState(false);
   const [linkHovered, setLinkHovered] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const addEventListeners = () => {
       document.addEventListener("mousemove", onMouseMove);
       document.addEventListener("mouseenter", onMouseEnter);
@@ -51,6 +53,10 @@ export default function CustomCursor() {
       clearTimeout(timeoutId);
     };
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   if (typeof navigator !== "undefined" && navigator.maxTouchPoints > 0) {
     return null; // hide CustomCursor on mobile devices

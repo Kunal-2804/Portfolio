@@ -4,6 +4,7 @@ import "./globals.css";
 import CustomCursor from "./components/CustomCursor";
 import ParticleBackground from "./components/ParticleBackground";
 import EmailSidebar from "./components/EmailSidebar";
+import Preloader from "./components/Preloader";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -32,6 +33,7 @@ export default function RootLayout({
       className={`${inter.variable} ${anton.variable} h-full antialiased`}
     >
       <body className="font-sans min-h-full flex flex-col bg-background text-foreground selection:bg-accent selection:text-white">
+        <Preloader />
         <CustomCursor />
         <ParticleBackground />
         <EmailSidebar />

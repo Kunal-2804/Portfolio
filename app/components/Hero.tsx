@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { ArrowDown } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center pt-20 px-6 lg:px-24">
+    <section className="relative min-h-screen flex flex-col justify-center pt-20 px-6 lg:px-24">
       <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row justify-between items-center gap-12">
         <div className="flex-1">
           <motion.div
@@ -27,12 +28,17 @@ export default function Hero() {
             className="mt-8 max-w-2xl"
           >
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
-              Hi! I&apos;m <span className="text-white font-semibold">Kunal Gawande</span>. A passionate Frontend Developer with 2+ years of experience specializing in React.js and Next.js. I focus on building scalable, responsive, and user-friendly web applications, blending clean code with modern UI/UX practices to deliver impactful digital solutions.
+              Hi! I'm <span className="text-white font-semibold">Kunal Gawande</span>. A passionate Frontend Developer with 2+ years of experience specializing in React.js and Next.js. I focus on building scalable, responsive, and user-friendly web applications, blending clean code with modern UI/UX practices to deliver impactful digital solutions.
             </p>
 
-            <button className="mt-10 px-8 py-4 bg-accent text-white font-bold tracking-wider hover:bg-accent-hover transition-colors duration-300 transform hover:-translate-y-1 block">
-              HIRE ME
-            </button>
+            <div className="flex gap-4 mt-10">
+              <a href="mailto:kunalkhindevgawande@gmail.com" className="px-8 py-4 bg-accent text-white font-bold tracking-wider hover:bg-accent-hover transition-colors duration-300 transform hover:-translate-y-1 block">
+                HIRE ME
+              </a>
+              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-gray-600 text-white font-bold tracking-wider hover:bg-gray-800 transition-colors duration-300 transform hover:-translate-y-1 block">
+                GITHUB
+              </a>
+            </div>
           </motion.div>
         </div>
 
@@ -56,6 +62,23 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 1 }}
+        className="mt-16 lg:mt-0 lg:absolute lg:bottom-10 lg:left-1/2 lg:-translate-x-1/2 flex flex-col items-center gap-2 self-center"
+      >
+        <span className="text-gray-500 font-mono text-xs tracking-widest uppercase">Scroll Down</span>
+        <motion.div
+           animate={{ y: [0, 10, 0] }}
+           transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+           className="text-accent"
+        >
+          <ArrowDown size={24} />
+        </motion.div>
+      </motion.div>
+
     </section>
   );
 }
