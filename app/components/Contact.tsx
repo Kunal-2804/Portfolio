@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className="py-32 px-6 lg:px-24 max-w-7xl mx-auto border-t border-gray-800">
+    <section className="py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto border-t border-gray-800">
       <motion.div
         initial={{ opacity: 0.2 }}
         whileInView={{ opacity: 1 }}

@@ -22,7 +22,7 @@ const experiences = [
 
 export default function Experience() {
   return (
-    <section className="py-32 px-6 lg:px-24 max-w-7xl mx-auto relative">
+    <section className="py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto relative">
       <div className="flex items-center gap-4 mb-32">
         <h2 className="font-heading text-4xl md:text-6xl text-white uppercase tracking-widest">
           MY <span className="text-accent">EXPERIENCE</span>

@@ -23,9 +23,9 @@ export default function EmailSidebar() {
   const bottomLineHeight = useTransform(scrollYProgress, [0.7, 1], ["0%", "100%"]);
 
   return (
-    <div className="hidden lg:flex fixed top-0 left-10 h-screen flex-col justify-center items-center gap-6 z-40">
+    <div className="flex fixed top-0 left-2 md:left-6 lg:left-10 h-screen flex-col justify-center items-center gap-4 md:gap-6 z-40">
       {/* Top Line */}
-      <div className="w-[1px] h-24 bg-gray-800 relative overflow-hidden flex-shrink-0">
+      <div className="w-[1px] h-16 md:h-24 bg-gray-800 relative overflow-hidden flex-shrink-0">
          <motion.div 
            className="absolute top-0 left-0 w-full bg-accent"
            style={{ height: topLineHeight }}
@@ -34,7 +34,7 @@ export default function EmailSidebar() {
 
       <Link
         href="mailto:kunalkhindevgawande@gmail.com"
-        className="font-sans text-sm tracking-widest transition-transform duration-300 hover:-translate-y-1 block cursor-pointer"
+        className="font-sans text-[10px] md:text-sm tracking-widest transition-transform duration-300 hover:-translate-y-1 block cursor-pointer"
         style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
       >
         {letters.map((char, index) => (
@@ -49,7 +49,7 @@ export default function EmailSidebar() {
       </Link>
 
       {/* Bottom Line */}
-      <div className="w-[1px] h-24 bg-gray-800 relative overflow-hidden flex-shrink-0">
+      <div className="w-[1px] h-16 md:h-24 bg-gray-800 relative overflow-hidden flex-shrink-0">
          <motion.div 
            className="absolute top-0 left-0 w-full bg-accent"
            style={{ height: bottomLineHeight }}
