@@ -35,7 +35,7 @@ export default function Hero() {
               <a href="mailto:kunalkhindevgawande@gmail.com" className="px-8 py-3 rounded-full bg-accent/20 backdrop-blur-md border border-accent/50 shadow-[0_0_15px_#4C8CE44d] text-white font-medium tracking-wide hover:bg-accent/30 hover:shadow-[0_0_20px_#4C8CE480] transition-all duration-300 block text-center">
                 Hire Me
               </a>
-              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-[0_0_15px_#ffffff33] text-white font-medium tracking-wide hover:bg-white/10 hover:shadow-[0_0_20px_#ffffff66] transition-all duration-300 block text-center">
+              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-transparent backdrop-blur-md border border-white/20 shadow-[0_0_15px_#ffffff33] text-white font-medium tracking-wide hover:bg-white/5 hover:shadow-[0_0_20px_#ffffff66] transition-all duration-300 block text-center">
                 Github
               </a>
             </div>
