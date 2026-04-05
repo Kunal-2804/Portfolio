@@ -9,8 +9,8 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row justify-between items-center gap-12">
         <div className="flex-1">
           <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -100 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
             <h1 className="font-heading text-6xl md:text-8xl lg:text-[10rem] text-accent uppercase tracking-wider leading-none">
@@ -22,9 +22,9 @@ export default function Hero() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 0.5, duration: 1 }}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ delay: 0.5, duration: 1, ease: "easeOut" }}
             className="mt-8 max-w-2xl"
           >
             <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
@@ -32,11 +32,11 @@ export default function Hero() {
             </p>
 
             <div className="flex gap-4 mt-10">
-              <a href="mailto:kunalkhindevgawande@gmail.com" className="px-8 py-4 bg-accent text-white font-bold tracking-wider hover:bg-accent-hover transition-colors duration-300 transform hover:-translate-y-1 block">
-                HIRE ME
+              <a href="mailto:kunalkhindevgawande@gmail.com" className="px-8 py-3 rounded-full bg-accent/20 backdrop-blur-md border border-accent/50 shadow-[0_0_15px_#4C8CE44d] text-white font-medium tracking-wide hover:bg-accent/30 hover:shadow-[0_0_20px_#4C8CE480] transition-all duration-300 block text-center">
+                Hire Me
               </a>
-              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-4 border border-gray-600 text-white font-bold tracking-wider hover:bg-gray-800 transition-colors duration-300 transform hover:-translate-y-1 block">
-                GITHUB
+              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-black/40 backdrop-blur-md border border-white/20 shadow-[0_0_15px_#ffffff33] text-white font-medium tracking-wide hover:bg-white/10 hover:shadow-[0_0_20px_#ffffff66] transition-all duration-300 block text-center">
+                Github
               </a>
             </div>
           </motion.div>

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion, useScroll, useTransform, MotionValue } from "framer-motion";
-import Link from "next/link";
 
 const AnimatedLetter = ({ char, progress, index, total }: { char: string, progress: MotionValue<number>, index: number, total: number }) => {
   const charStart = 0.3 + (index / total) * 0.4;
@@ -32,7 +31,7 @@ export default function EmailSidebar() {
          />
       </div>
 
-      <Link
+      <a
         href="mailto:kunalkhindevgawande@gmail.com"
         className="font-sans text-[10px] md:text-sm tracking-widest transition-transform duration-300 hover:-translate-y-1 block cursor-pointer"
         style={{ writingMode: "vertical-rl", textOrientation: "mixed" }}
@@ -46,7 +45,7 @@ export default function EmailSidebar() {
              total={letters.length} 
           />
         ))}
-      </Link>
+      </a>
 
       {/* Bottom Line */}
       <div className="w-[1px] h-16 md:h-24 bg-gray-800 relative overflow-hidden flex-shrink-0">
