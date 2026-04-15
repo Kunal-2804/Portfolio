@@ -32,11 +32,30 @@ export default function Hero() {
             </p>
 
             <div className="flex gap-4 mt-10">
-              <a href="mailto:kunalkhindevgawande@gmail.com" className="px-8 py-3 rounded-full bg-accent/20 backdrop-blur-md border border-accent/50 shadow-[0_0_15px_#4C8CE44d] text-white font-medium tracking-wide hover:bg-accent/30 hover:shadow-[0_0_20px_#4C8CE480] transition-all duration-300 block text-center">
-                Hire Me
+              <a 
+                href="mailto:kunalkhindevgawande@gmail.com" 
+                className="spotlight-btn relative group px-8 py-3 rounded-full border border-accent/50 shadow-[0_0_15px_#4C8CE44d] text-white bg-[#0a0a0a] font-medium tracking-wide transition-all duration-300 flex items-center justify-center isolate overflow-hidden"
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  e.currentTarget.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                  e.currentTarget.style.setProperty('--y', `${e.clientY - rect.top}px`);
+                }}
+              >
+                <span className="relative z-10">Hire Me</span>
               </a>
-              <a href="https://github.com/Kunal-2804" target="_blank" rel="noopener noreferrer" className="px-8 py-3 rounded-full bg-transparent backdrop-blur-md border border-white/20 shadow-[0_0_15px_#ffffff33] text-white font-medium tracking-wide hover:bg-white/5 hover:shadow-[0_0_20px_#ffffff66] transition-all duration-300 block text-center">
-                Github
+              <a 
+                href="https://github.com/Kunal-2804" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="spotlight-btn relative group px-8 py-3 rounded-full border border-white/20 shadow-[0_0_15px_#ffffff33] hover:shadow-[0_0_5px_#ffffff1a,inset_0_0_20px_#ffffff26,inset_0_0_5px_#ffffff4d] text-white bg-[#0a0a0a] lg:bg-transparent font-medium tracking-wide transition-all duration-300 flex items-center justify-center isolate overflow-hidden"
+                style={{ '--spotlight-color': 'rgba(255, 255, 255, 0.4)' } as React.CSSProperties}
+                onMouseMove={(e) => {
+                  const rect = e.currentTarget.getBoundingClientRect();
+                  e.currentTarget.style.setProperty('--x', `${e.clientX - rect.left}px`);
+                  e.currentTarget.style.setProperty('--y', `${e.clientY - rect.top}px`);
+                }}
+              >
+                <span className="relative z-10">Github</span>
               </a>
             </div>
           </motion.div>

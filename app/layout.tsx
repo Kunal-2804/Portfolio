@@ -32,7 +32,7 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${anton.variable} h-full antialiased`}
     >
-      <body className="font-sans min-h-full flex flex-col bg-background text-foreground selection:bg-accent selection:text-white">
+      <body className="font-sans min-h-full flex flex-col bg-background text-foreground selection:bg-accent selection:text-white cursor-none [&_*]:cursor-none">
         <Preloader />
         <CustomCursor />
         <ParticleBackground />

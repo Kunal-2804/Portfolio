@@ -14,6 +14,10 @@
   --foreground: #ffffff;
 }
 
+* {
+  cursor: none !important;
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
@@ -29,4 +33,39 @@ body {
 
 .font-heading {
   font-family: var(--font-anton);
+}
+
+@theme inline {
+  --animate-star-btn: star-btn calc(var(--duration)*1s) linear infinite;
+}
+
+@keyframes star-btn {
+  0% {
+    offset-distance: 0%;
+  }
+  100% {
+    offset-distance: 100%;
+  }
+}
+
+.spotlight-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    var(--spotlight-color, rgba(76, 140, 228, 0.8)) 0%,
+    transparent 100px
+  );
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.spotlight-btn:hover::before {
+  opacity: 1;
 }
