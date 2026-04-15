@@ -31,6 +31,8 @@ export default function Preloader() {
 
     const letters = textRef.current?.querySelectorAll(".letter");
 
+    if (!letters || letters.length === 0) return;
+
     // 0. Initial Setup
     gsap.set(letters, { 
       opacity: 0, 
