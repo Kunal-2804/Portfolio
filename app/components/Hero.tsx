@@ -31,6 +31,7 @@ export default function Hero() {
               Hi! I'm <span className="text-white font-semibold">Kunal Gawande</span>. A passionate Frontend Developer with 2+ years of experience specializing in React.js and Next.js. I focus on building scalable, responsive, and user-friendly web applications, blending clean code with modern UI/UX practices to deliver impactful digital solutions.
             </p>
 
+
             <div className="flex gap-4 mt-10">
               <a 
                 href="mailto:kunalkhindevgawande@gmail.com" 
