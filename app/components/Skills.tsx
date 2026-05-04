@@ -70,7 +70,7 @@ export default function Skills() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
-        className="font-heading text-4xl md:text-6xl text-white mb-16 text-right"
+        className="font-heading text-4xl md:text-6xl text-white mb-16"
       >
         TECH <span className="text-accent">STACK</span>
       </motion.h2>
