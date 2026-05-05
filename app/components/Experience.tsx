@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 const experiences = [
   {
@@ -20,28 +20,28 @@ const experiences = [
   },
 ];
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.25 } },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: {
     opacity: 1,
     y: 0,
-    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] as [number, number, number, number] },
+    transition: { duration: 0.8, ease: [0.16, 1, 0.3, 1] },
   },
 };
 
-const badgeVariants = {
+const badgeVariants: Variants = {
   hidden: { scale: 0, rotate: -30 },
   visible: {
     scale: 1,
     rotate: 0,
     transition: { type: "spring", stiffness: 260, damping: 20, delay: 0.1 },
   },
-} as const;
+};
 
 export default function Experience() {
   return (

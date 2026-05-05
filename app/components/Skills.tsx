@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import {
   FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma
 } from "react-icons/fa";
@@ -51,7 +51,7 @@ const skillsData = [
   }
 ];
 
-const chipVariants = {
+const chipVariants: Variants = {
   hidden: { opacity: 0, scale: 0.7, y: 20 },
   visible: (i: number) => ({
     opacity: 1,

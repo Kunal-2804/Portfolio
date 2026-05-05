@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import { ExternalLink } from "lucide-react";
 
 const projects = [
@@ -21,12 +21,12 @@ const projects = [
   },
 ];
 
-const rowVariants = {
+const rowVariants: Variants = {
   hidden: { opacity: 0, y: 50 },
   visible: (i: number) => ({
     opacity: 1,
     y: 0,
-    transition: { delay: i * 0.18, duration: 0.7, ease: [0.16, 1, 0.3, 1] as const },
+    transition: { delay: i * 0.18, duration: 0.7, ease: [0.16, 1, 0.3, 1] },
   }),
 };
 
