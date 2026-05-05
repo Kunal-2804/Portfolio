@@ -41,7 +41,7 @@ const badgeVariants = {
     rotate: 0,
     transition: { type: "spring", stiffness: 260, damping: 20, delay: 0.1 },
   },
-};
+} as const;
 
 export default function Experience() {
   return (
