@@ -19,7 +19,7 @@ export default function Contact() {
   return (
     <section
       ref={ref}
-      className="py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto border-t border-gray-800"
+      className="py-20 md:py-24 xl:py-28 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto border-t border-gray-800"
     >
       {/* Zoom-in scale reveal for the CTA heading */}
       <motion.div
@@ -55,7 +55,7 @@ export default function Contact() {
           hidden: {},
           visible: { transition: { staggerChildren: 0.12 } },
         }}
-        className="mt-32 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
+        className="mt-20 md:mt-24 xl:mt-28 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center gap-6"
       >
         <motion.p
           variants={{ hidden: { opacity: 0, x: -20 }, visible: { opacity: 1, x: 0 } }}

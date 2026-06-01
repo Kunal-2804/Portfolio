@@ -18,7 +18,7 @@ export default function About() {
   const opacity  = useTransform(scrollYProgress, [0.1, 0.4], [0, 1]);
 
   return (
-    <section ref={ref} className="py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto overflow-hidden">
+    <section ref={ref} className="py-20 md:py-24 xl:py-28 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto overflow-hidden">
       {/* Section label — fade in */}
       <motion.p
         initial={{ opacity: 0, letterSpacing: "0.5em" }}
@@ -43,15 +43,16 @@ export default function About() {
       {/* Two paragraphs slide in from opposite sides */}
       <div className="grid md:grid-cols-2 gap-12 text-gray-400 text-lg leading-relaxed">
         <motion.p style={{ x: para1X, opacity }}>
-          I specialize in building robust frontend solutions that deliver seamless user
+          I specialize in building robust full-stack solutions that deliver seamless end-to-end user
           experiences. With a strong foundation in{" "}
-          <span className="text-white">React.js</span> and{" "}
-          <span className="text-white">Next.js</span>, I translate complex requirements
-          into clean, scalable code.
+          <span className="text-white">Next.js</span>,{" "}
+          <span className="text-white">Node.js</span>, and{" "}
+          <span className="text-white">modern databases</span>, I translate complex business requirements
+          into clean, secure, and scalable applications.
         </motion.p>
         <motion.p style={{ x: para2X, opacity }}>
-          Whether it&apos;s creating pixel-perfect UIs from initial designs or optimizing
-          web performance, I am constantly exploring modern standards to deliver impactful
+          Whether it&apos;s creating pixel-perfect, highly-interactive user interfaces or designing
+          efficient database models and RESTful/GraphQL APIs, I am constantly exploring modern standards to deliver impactful
           digital products that users genuinely love to use.
         </motion.p>
       </div>

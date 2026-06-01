@@ -34,7 +34,7 @@ export default function Projects() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section className="py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto">
+    <section className="py-20 md:py-24 xl:py-28 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}

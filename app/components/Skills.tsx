@@ -63,7 +63,7 @@ const chipVariants: Variants = {
 
 export default function Skills() {
   return (
-    <section className="py-24 md:py-32 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto">
+    <section className="py-16 md:py-20 xl:py-24 px-10 md:px-20 lg:px-24 max-w-7xl mx-auto">
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: 40 }}
